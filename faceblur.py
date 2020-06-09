@@ -41,7 +41,7 @@ def face_blur(src_img, dest_img, zoom_in=1):
         face_image = photo[top:bottom, left:right]
 
         # Blur the face image
-        face_image = cv2.GaussianBlur(face_image, (21, 21), 0)
+        face_image = cv2.GaussianBlur(face_image, (41, 41), 0)
 
         # Put the blurred face region back into the frame image
         photo[top:bottom, left:right] = face_image
